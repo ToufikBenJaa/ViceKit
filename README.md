@@ -14,21 +14,50 @@ ViceKit is under active development, with new features and file format support b
 
 ### Currently available
 
-- RPF archive exploration
-- Nested RPF archive navigation
+- RPF archive exploration, including nested archives, with over 575,000 known file names
+- Search across the opened archives
 - File extraction
-- Hexadecimal viewer
-- Text viewer
+- Hexadecimal and text viewers
+- Metadata (`.zmt`) structure viewer
+- Texture viewer for texture dictionaries (`.ztd`), with DDS export
+- Interactive 3D model viewer for models (`.zdr`), fragments (`.zft`) and model dictionaries (`.zdd`)
+- Material inspection: the shaders each mesh uses and the textures they reference
+- Model export to glTF (`.glb`) and OBJ, and PNG screenshots
 
 ### Planned
 
-- Texture viewer
-- Interactive 3D model viewer
-- Resource and metadata inspection
-- Material and shader inspection
-- Asset exporting
+- Textures applied on 3D models
+- Streamed textures (`ttdb` packages)
+- Assembled characters
+- Search across all archives without opening them first
 - Additional file format support
 - More game asset exploration and analysis tools
+
+## Screenshots
+
+<p align="center">
+  <img src="assets/model_viewer.gif" alt="Interactive 3D model viewer" width="900"/>
+</p>
+
+**Browse the game archives**, including the archives nested inside them.
+
+<p align="center">
+  <img src="assets/main_view.png" alt="Archive browser" width="900"/>
+</p>
+
+**Inspect 3D models** mesh by mesh, or a whole model dictionary at once, with several display modes.
+
+<p align="center">
+  <img src="assets/model_view_infernus2.png" alt="A vehicle coloured by geometry, with its meshes listed" width="49%"/>
+  <img src="assets/model_view_vc_bears.png" alt="Every drawable of a model dictionary, shaded by face normals" width="49%"/>
+</p>
+
+**View textures** with their mip levels and colour channels, and save them as DDS.
+
+<p align="center">
+  <img src="assets/texture_view_face.png" alt="A character texture" width="49%"/>
+  <img src="assets/texture_view_snow_normal.png" alt="A normal map" width="49%"/>
+</p>
 
 ## Platform support
 
